@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\simd\CMakeLists.txt" />
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jsimdcpu.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctflt-3dn.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctflt-3dn.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquant-3dn.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jccolor-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcgray-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcsample-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdcolor-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdmerge-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdsample-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctfst-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctint-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctfst-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctint-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctred-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquant-mmx.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctflt-sse.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctflt-sse.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquant-sse.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jccolor-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcgray-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcsample-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdcolor-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdmerge-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdsample-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctfst-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctint-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctflt-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctfst-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctint-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctred-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquantf-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquanti-sse2.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\4ac8084280cec32608247701444b1e75\simd.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\simd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A9E7A4B2-7DD5-4929-9F59-F4BDCA7165FD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

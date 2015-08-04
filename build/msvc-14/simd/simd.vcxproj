@@ -1,0 +1,2071 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AD990699-4D6E-43E5-8C85-07DADCA4ED38}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>simd</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(ProjectDir)..\..\bin\nasm</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\build\msvc-14;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\build\msvc-14;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\build\msvc-14;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\build\msvc-14;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\simd\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule ../../../simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H../../../ -B../../../build/msvc-14 --check-stamp-file ..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../simd/CMakeLists.txt;..\..\..\simd\CMakeLists.txt;..\..\..\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule ../../../simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H../../../ -B../../../build/msvc-14 --check-stamp-file ..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../simd/CMakeLists.txt;..\..\..\simd\CMakeLists.txt;..\..\..\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule ../../../simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H../../../ -B../../../build/msvc-14 --check-stamp-file ..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../simd/CMakeLists.txt;..\..\..\simd\CMakeLists.txt;..\..\..\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule ../../../simd/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -H../../../ -B../../../build/msvc-14 --check-stamp-file ..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../simd/CMakeLists.txt;..\..\..\simd\CMakeLists.txt;..\..\..\simd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jsimdcpu.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jsimdcpu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jsimdcpu.asm -o../../../build/msvc-14/simd/$(Configuration)/jsimdcpu.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jsimdcpu.obj.rule;..\..\..\simd\jsimdcpu.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jsimdcpu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jsimdcpu.asm -o../../../build/msvc-14/simd/$(Configuration)/jsimdcpu.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jsimdcpu.obj.rule;..\..\..\simd\jsimdcpu.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jsimdcpu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jsimdcpu.asm -o../../../build/msvc-14/simd/$(Configuration)/jsimdcpu.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jsimdcpu.obj.rule;..\..\..\simd\jsimdcpu.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jsimdcpu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jsimdcpu.asm -o../../../build/msvc-14/simd/$(Configuration)/jsimdcpu.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jsimdcpu.obj.rule;..\..\..\simd\jsimdcpu.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctflt-3dn.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-3dn.obj.rule;..\..\..\simd\jfdctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-3dn.obj.rule;..\..\..\simd\jfdctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jfdctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-3dn.obj.rule;..\..\..\simd\jfdctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jfdctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-3dn.obj.rule;..\..\..\simd\jfdctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctflt-3dn.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-3dn.obj.rule;..\..\..\simd\jidctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-3dn.obj.rule;..\..\..\simd\jidctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-3dn.obj.rule;..\..\..\simd\jidctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctflt-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-3dn.obj.rule;..\..\..\simd\jidctflt-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquant-3dn.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquant-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-3dn.obj.rule;..\..\..\simd\jquant-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquant-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-3dn.obj.rule;..\..\..\simd\jquant-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jquant-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-3dn.obj.rule;..\..\..\simd\jquant-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jquant-3dn.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-3dn.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-3dn.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-3dn.obj.rule;..\..\..\simd\jquant-3dn.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jccolor-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jccolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-mmx.obj.rule;..\..\..\simd\jccolor-mmx.asm;..\..\..\simd\jccolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jccolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-mmx.obj.rule;..\..\..\simd\jccolor-mmx.asm;..\..\..\simd\jccolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jccolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-mmx.obj.rule;..\..\..\simd\jccolor-mmx.asm;..\..\..\simd\jccolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jccolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-mmx.obj.rule;..\..\..\simd\jccolor-mmx.asm;..\..\..\simd\jccolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcgray-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcgray-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-mmx.obj.rule;..\..\..\simd\jcgray-mmx.asm;..\..\..\simd\jcgryext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcgray-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-mmx.obj.rule;..\..\..\simd\jcgray-mmx.asm;..\..\..\simd\jcgryext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jcgray-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-mmx.obj.rule;..\..\..\simd\jcgray-mmx.asm;..\..\..\simd\jcgryext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jcgray-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-mmx.obj.rule;..\..\..\simd\jcgray-mmx.asm;..\..\..\simd\jcgryext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcsample-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-mmx.obj.rule;..\..\..\simd\jcsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-mmx.obj.rule;..\..\..\simd\jcsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jcsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-mmx.obj.rule;..\..\..\simd\jcsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jcsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-mmx.obj.rule;..\..\..\simd\jcsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdcolor-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdcolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-mmx.obj.rule;..\..\..\simd\jdcolor-mmx.asm;..\..\..\simd\jdcolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdcolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-mmx.obj.rule;..\..\..\simd\jdcolor-mmx.asm;..\..\..\simd\jdcolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jdcolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-mmx.obj.rule;..\..\..\simd\jdcolor-mmx.asm;..\..\..\simd\jdcolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jdcolor-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-mmx.obj.rule;..\..\..\simd\jdcolor-mmx.asm;..\..\..\simd\jdcolext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdmerge-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdmerge-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-mmx.obj.rule;..\..\..\simd\jdmerge-mmx.asm;..\..\..\simd\jdmrgext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdmerge-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-mmx.obj.rule;..\..\..\simd\jdmerge-mmx.asm;..\..\..\simd\jdmrgext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jdmerge-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-mmx.obj.rule;..\..\..\simd\jdmerge-mmx.asm;..\..\..\simd\jdmrgext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jdmerge-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-mmx.obj.rule;..\..\..\simd\jdmerge-mmx.asm;..\..\..\simd\jdmrgext-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdsample-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-mmx.obj.rule;..\..\..\simd\jdsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-mmx.obj.rule;..\..\..\simd\jdsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jdsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-mmx.obj.rule;..\..\..\simd\jdsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jdsample-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-mmx.obj.rule;..\..\..\simd\jdsample-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctfst-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-mmx.obj.rule;..\..\..\simd\jfdctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-mmx.obj.rule;..\..\..\simd\jfdctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jfdctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-mmx.obj.rule;..\..\..\simd\jfdctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jfdctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-mmx.obj.rule;..\..\..\simd\jfdctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctint-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-mmx.obj.rule;..\..\..\simd\jfdctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-mmx.obj.rule;..\..\..\simd\jfdctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jfdctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-mmx.obj.rule;..\..\..\simd\jfdctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jfdctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-mmx.obj.rule;..\..\..\simd\jfdctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctfst-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-mmx.obj.rule;..\..\..\simd\jidctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-mmx.obj.rule;..\..\..\simd\jidctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-mmx.obj.rule;..\..\..\simd\jidctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctfst-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-mmx.obj.rule;..\..\..\simd\jidctfst-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctint-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-mmx.obj.rule;..\..\..\simd\jidctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-mmx.obj.rule;..\..\..\simd\jidctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-mmx.obj.rule;..\..\..\simd\jidctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctint-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-mmx.obj.rule;..\..\..\simd\jidctint-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctred-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctred-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-mmx.obj.rule;..\..\..\simd\jidctred-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctred-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-mmx.obj.rule;..\..\..\simd\jidctred-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctred-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-mmx.obj.rule;..\..\..\simd\jidctred-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctred-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-mmx.obj.rule;..\..\..\simd\jidctred-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquant-mmx.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquant-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-mmx.obj.rule;..\..\..\simd\jquant-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquant-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-mmx.obj.rule;..\..\..\simd\jquant-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jquant-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-mmx.obj.rule;..\..\..\simd\jquant-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jquant-mmx.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-mmx.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-mmx.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-mmx.obj.rule;..\..\..\simd\jquant-mmx.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctflt-sse.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-sse.obj.rule;..\..\..\simd\jfdctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-sse.obj.rule;..\..\..\simd\jfdctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jfdctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-sse.obj.rule;..\..\..\simd\jfdctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jfdctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctflt-sse.obj.rule;..\..\..\simd\jfdctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctflt-sse.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse.obj.rule;..\..\..\simd\jidctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse.obj.rule;..\..\..\simd\jidctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse.obj.rule;..\..\..\simd\jidctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctflt-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse.obj.rule;..\..\..\simd\jidctflt-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquant-sse.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquant-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-sse.obj.rule;..\..\..\simd\jquant-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquant-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-sse.obj.rule;..\..\..\simd\jquant-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jquant-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-sse.obj.rule;..\..\..\simd\jquant-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jquant-sse.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquant-sse.asm -o../../../build/msvc-14/simd/$(Configuration)/jquant-sse.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquant-sse.obj.rule;..\..\..\simd\jquant-sse.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jccolor-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jccolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-sse2.obj.rule;..\..\..\simd\jccolor-sse2.asm;..\..\..\simd\jccolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jccolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-sse2.obj.rule;..\..\..\simd\jccolor-sse2.asm;..\..\..\simd\jccolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jccolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-sse2.obj.rule;..\..\..\simd\jccolor-sse2.asm;..\..\..\simd\jccolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jccolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jccolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jccolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jccolor-sse2.obj.rule;..\..\..\simd\jccolor-sse2.asm;..\..\..\simd\jccolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcgray-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcgray-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-sse2.obj.rule;..\..\..\simd\jcgray-sse2.asm;..\..\..\simd\jcgryext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcgray-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-sse2.obj.rule;..\..\..\simd\jcgray-sse2.asm;..\..\..\simd\jcgryext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jcgray-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-sse2.obj.rule;..\..\..\simd\jcgray-sse2.asm;..\..\..\simd\jcgryext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jcgray-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcgray-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcgray-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcgray-sse2.obj.rule;..\..\..\simd\jcgray-sse2.asm;..\..\..\simd\jcgryext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jcsample-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jcsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-sse2.obj.rule;..\..\..\simd\jcsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jcsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-sse2.obj.rule;..\..\..\simd\jcsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jcsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-sse2.obj.rule;..\..\..\simd\jcsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jcsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jcsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jcsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jcsample-sse2.obj.rule;..\..\..\simd\jcsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdcolor-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdcolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-sse2.obj.rule;..\..\..\simd\jdcolor-sse2.asm;..\..\..\simd\jdcolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdcolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-sse2.obj.rule;..\..\..\simd\jdcolor-sse2.asm;..\..\..\simd\jdcolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jdcolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-sse2.obj.rule;..\..\..\simd\jdcolor-sse2.asm;..\..\..\simd\jdcolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jdcolor-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdcolor-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdcolor-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdcolor-sse2.obj.rule;..\..\..\simd\jdcolor-sse2.asm;..\..\..\simd\jdcolext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdmerge-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdmerge-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-sse2.obj.rule;..\..\..\simd\jdmerge-sse2.asm;..\..\..\simd\jdmrgext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdmerge-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-sse2.obj.rule;..\..\..\simd\jdmerge-sse2.asm;..\..\..\simd\jdmrgext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jdmerge-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-sse2.obj.rule;..\..\..\simd\jdmerge-sse2.asm;..\..\..\simd\jdmrgext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jdmerge-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdmerge-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdmerge-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdmerge-sse2.obj.rule;..\..\..\simd\jdmerge-sse2.asm;..\..\..\simd\jdmrgext-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jdsample-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jdsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-sse2.obj.rule;..\..\..\simd\jdsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jdsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-sse2.obj.rule;..\..\..\simd\jdsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jdsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-sse2.obj.rule;..\..\..\simd\jdsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jdsample-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jdsample-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jdsample-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jdsample-sse2.obj.rule;..\..\..\simd\jdsample-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctfst-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-sse2.obj.rule;..\..\..\simd\jfdctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-sse2.obj.rule;..\..\..\simd\jfdctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jfdctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-sse2.obj.rule;..\..\..\simd\jfdctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jfdctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctfst-sse2.obj.rule;..\..\..\simd\jfdctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jfdctint-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jfdctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-sse2.obj.rule;..\..\..\simd\jfdctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jfdctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-sse2.obj.rule;..\..\..\simd\jfdctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jfdctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-sse2.obj.rule;..\..\..\simd\jfdctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jfdctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jfdctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jfdctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jfdctint-sse2.obj.rule;..\..\..\simd\jfdctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctflt-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctflt-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse2.obj.rule;..\..\..\simd\jidctflt-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctflt-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse2.obj.rule;..\..\..\simd\jidctflt-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctflt-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse2.obj.rule;..\..\..\simd\jidctflt-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctflt-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctflt-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctflt-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctflt-sse2.obj.rule;..\..\..\simd\jidctflt-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctfst-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-sse2.obj.rule;..\..\..\simd\jidctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-sse2.obj.rule;..\..\..\simd\jidctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-sse2.obj.rule;..\..\..\simd\jidctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctfst-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctfst-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctfst-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctfst-sse2.obj.rule;..\..\..\simd\jidctfst-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctint-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-sse2.obj.rule;..\..\..\simd\jidctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-sse2.obj.rule;..\..\..\simd\jidctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-sse2.obj.rule;..\..\..\simd\jidctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctint-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctint-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctint-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctint-sse2.obj.rule;..\..\..\simd\jidctint-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jidctred-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jidctred-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-sse2.obj.rule;..\..\..\simd\jidctred-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jidctred-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-sse2.obj.rule;..\..\..\simd\jidctred-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jidctred-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-sse2.obj.rule;..\..\..\simd\jidctred-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jidctred-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jidctred-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jidctred-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jidctred-sse2.obj.rule;..\..\..\simd\jidctred-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquantf-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquantf-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquantf-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquantf-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquantf-sse2.obj.rule;..\..\..\simd\jquantf-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquantf-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquantf-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquantf-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquantf-sse2.obj.rule;..\..\..\simd\jquantf-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jquantf-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquantf-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquantf-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquantf-sse2.obj.rule;..\..\..\simd\jquantf-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jquantf-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquantf-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquantf-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquantf-sse2.obj.rule;..\..\..\simd\jquantf-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\91cd0bf85eab7200cfc82e34ea1d6c1c\jquanti-sse2.obj.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating $(Configuration)/jquanti-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquanti-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquanti-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquanti-sse2.obj.rule;..\..\..\simd\jquanti-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating $(Configuration)/jquanti-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquanti-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquanti-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquanti-sse2.obj.rule;..\..\..\simd\jquanti-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating $(Configuration)/jquanti-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquanti-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquanti-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquanti-sse2.obj.rule;..\..\..\simd\jquanti-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating $(Configuration)/jquanti-sse2.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+nasm -fwin32 -DWIN32 -I../../../win/ -I../../../simd/ ../../../simd/jquanti-sse2.asm -o../../../build/msvc-14/simd/$(Configuration)/jquanti-sse2.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/91cd0bf85eab7200cfc82e34ea1d6c1c/jquanti-sse2.obj.rule;..\..\..\simd\jquanti-sse2.asm;..\..\..\simd\jcolsamp.inc;..\..\..\simd\jdct.inc;..\..\..\simd\jsimdext.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="build\msvc-14\CMakeFiles\4ac8084280cec32608247701444b1e75\simd.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/4ac8084280cec32608247701444b1e75/simd.rule;..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/4ac8084280cec32608247701444b1e75/simd.rule;..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/4ac8084280cec32608247701444b1e75/simd.rule;..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">../../../build/msvc-14/simd/build/msvc-14/CMakeFiles/4ac8084280cec32608247701444b1e75/simd.rule;..\..\..\build\msvc-14\simd\$(Configuration)\jsimdcpu.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-3dn.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-mmx.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquant-sse.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jccolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcgray-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jcsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdcolor-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdmerge-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jdsample-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jfdctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctflt-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctfst-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctint-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jidctred-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquantf-sse2.obj;..\..\..\build\msvc-14\simd\$(Configuration)\jquanti-sse2.obj;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">..\..\..\build\msvc-14\simd\CMakeFiles\simd</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\simd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
