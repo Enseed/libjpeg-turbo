@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="..\..\..\jcapimin.c">
@@ -151,117 +151,13 @@
     <ClCompile Include="..\..\..\simd\jsimd_i386.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\..\sharedlib\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="..\simd\$(Configuration)\jsimdcpu.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jfdctflt-3dn.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctflt-3dn.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jquant-3dn.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jccolor-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jcgray-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jcsample-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jdcolor-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jdmerge-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jdsample-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jfdctfst-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jfdctint-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctfst-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctint-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctred-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jquant-mmx.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jfdctflt-sse.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctflt-sse.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jquant-sse.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jccolor-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jcgray-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jcsample-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jdcolor-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jdmerge-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jdsample-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jfdctfst-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jfdctint-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctflt-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctfst-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctint-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jidctred-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jquantf-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
-    <Object Include="..\simd\$(Configuration)\jquanti-sse2.obj">
-      <Filter>Object Files</Filter>
-    </Object>
+    <ClCompile Include="..\..\..\simd\jsimd_x86_64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{5C17B568-E0B6-49B0-B8FF-2B003CD44443}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Object Files">
-      <UniqueIdentifier>{7BF357E9-279E-41AA-91BB-DE8B0B58B89B}</UniqueIdentifier>
+      <UniqueIdentifier>{E59C7F8B-577C-470E-8E15-847F62E9F983}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

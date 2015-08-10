@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{50ABFF22-907E-445F-A3E0-44FCF6FC6DFE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x86">
+      <UniqueIdentifier>{02d6de45-177f-479d-a01e-9d7b3cea7684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x64">
+      <UniqueIdentifier>{ec34c94d-5226-4dce-bd4a-4e0980eafb49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <NASM Include="..\..\..\simd\jsimdcpu.asm" />
+    <NASM Include="..\..\..\simd\jccolor-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jccolor-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jcgray-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jcgray-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jcsample-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jcsample-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdcolor-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdcolor-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdmerge-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdmerge-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdsample-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdsample-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctflt-3dn.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctflt-sse.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctfst-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctfst-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctint-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctint-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctflt-sse.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctflt-3dn.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctflt-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctfst-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctfst-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctint-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctint-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctred-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctred-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jquant-3dn.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jquantf-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jquanti-sse2.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jquant-mmx.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jquant-sse.asm">
+      <Filter>x86</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jccolor-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jcgray-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jcgryext-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jcsample-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdcolext-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdmerge-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdmrgext-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdsample-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctflt-sse-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctfst-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jfdctint-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctflt-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctfst-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctint-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jidctred-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jquantf-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jquanti-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+    <NASM Include="..\..\..\simd\jdcolor-sse2-64.asm">
+      <Filter>x64</Filter>
+    </NASM>
+  </ItemGroup>
+</Project>

@@ -13,3 +13,6 @@ install-sh
 ltmain.sh
 missing
 **/Debug/
+**/Release/
+**/Release Static/
+**/Debug Static/
