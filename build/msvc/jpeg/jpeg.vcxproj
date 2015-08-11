@@ -89,49 +89,49 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Debug.props" />
     <Import Project="props\Profile Dynamic.props" />
     <Import Project="props\jpeg.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="PropertySheets">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Debug.props" />
     <Import Project="props\Profile Static.props" />
     <Import Project="props\jpeg.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Debug.props" />
     <Import Project="props\Profile Dynamic.props" />
     <Import Project="props\jpeg.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'" Label="PropertySheets">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Debug.props" />
     <Import Project="props\Profile Static.props" />
     <Import Project="props\jpeg.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Release.props" />
     <Import Project="props\Profile Dynamic.props" />
     <Import Project="props\jpeg.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="PropertySheets">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Release.props" />
     <Import Project="props\Profile Static.props" />
     <Import Project="props\jpeg.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Release.props" />
     <Import Project="props\Profile Dynamic.props" />
     <Import Project="props\jpeg.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'" Label="PropertySheets">
-    <Import Project="Set Version.props" />
+    <Import Project="props\Set Version.props" />
     <Import Project="props\Profile Release.props" />
     <Import Project="props\Profile Static.props" />
     <Import Project="props\jpeg.props" />
